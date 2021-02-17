@@ -88,12 +88,12 @@ nav ul li a:hover, nav ul li a i:hover{
 }
 
 .container{
-    background-image: url("../img/cabecera.jpg"); /* The image used */
-    background-color: #cccccc; /* Used if the image is unavailable */
-    height: 300px; /* You must set a specified height */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+    background-image: url("../img/cabecera.jpg");
+    background-color: #cccccc; 
+    height: 300px; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover; 
 }
 
 /**************************
@@ -133,16 +133,36 @@ nav ul li a:hover, nav ul li a i:hover{
     margin-top: 10px;
     border: 5px solid #ccc;
     display: flex;
+    flex-wrap: wrap;
     overflow: hidden;
 }
 
 .article{
+    width: calc(50% - 10px);
     border: 5px solid #ccc;
+    display: flex;
+    flex-direction: column;
 }
 
-.article img{
+.article-img{
+    justify-content: center;
+    height: 70%;
+}
+.article-img img{
     width: 100%;
     height: 100%;
+}
+
+.article p{
+    padding: 2rem;
+}
+
+.article p a{
+    color: rgba(0, 0, 0, 0.456);
+}
+
+.article p a:hover{
+    color: rgb(247, 137, 155);
 }
 
 
@@ -161,3 +181,49 @@ footer{
 #developer{
     color: #F77C4D;
 }
+
+/* + - + - + - + - + - + - + - +  - + - + - + - + - + - + -
+       R    E   S   P   O   N   S   I   V   E  
+ + - + - + - + - + - + - + - +  - + - + - + - + - + - + - */
+
+ /**************************
+     M O B I L E
+**************************/
+
+/***** 480px *****/
+@media screen and (min-device-width: 220px) and (max-device-width: 480px) {
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul li{
+        align-self:flex-start;
+    }
+    .social-links ul{
+        display: flex;
+        flex-direction: row;
+    }
+    .social-links ul li a i{
+        color: rgba(12, 12, 12, 0.836);
+    }
+
+
+    .articles{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+  
+    }
+    .article{
+        width: calc(100% - 10px);
+    } 
+}
+
+ /**************************
+      T A B L E T
+**************************/
+@media screen and (min-device-width: 481px) and (max-device-width: 1024px) {}
