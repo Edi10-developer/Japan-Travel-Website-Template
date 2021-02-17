@@ -1,0 +1,163 @@
+@font-face{
+    font-family: MavenPro;
+    src:url(../fonts/MavenPro-VariableFont_wght.ttf);
+}
+@font-face{
+    font-family: Actor;
+    src:url(../fonts/actor/Actor-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 40px;
+}
+
+a{
+    text-decoration: none;
+}
+
+i{
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/**************************
+       H E A D E R
+**************************/
+.header{
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+#logo{
+    flex-grow: 1;
+}
+
+#logo img{
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+nav{
+    flex-grow: 7; 
+    font-family: MavenPro; 
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    justify-content:space-evenly
+}
+
+nav ul li{
+    flex-basis: auto;
+}
+
+nav ul li a{
+    color: rgba(0, 0, 0, 0.456);
+    font-weight: bold;
+}
+
+nav ul li a:hover, nav ul li a i:hover{
+    color: rgba(0, 0, 0, 0.956);
+}
+
+.social-links{
+    flex-grow: 1;
+}
+
+.social-links a i{
+    color: rgba(0, 0, 0, 0.456);
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.social-links a i:hover{
+    color: rgba(0, 0, 0, 0.956);
+}
+
+.container{
+    background-image: url("../img/cabecera.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 300px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+/**************************
+       B A N N E R 
+**************************/
+.main-section{
+    height: calc(300px - 95px);
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content: flex-end;
+    padding: 2rem;
+    padding-bottom: .9rem;
+}
+
+.banner{
+    background-color: rgba(0, 0, 0, 0.119);
+    height: 100px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-family: Actor;
+    letter-spacing: 1px;
+}
+
+.banner h1{
+    align-self: center; 
+    color: rgb(247, 137, 155);
+    font-weight: 700;  
+}
+
+/**************************
+       A R T I C L E S 
+**************************/
+.articles{
+    margin-top: 10px;
+    border: 5px solid #ccc;
+    display: flex;
+    overflow: hidden;
+}
+
+.article{
+    border: 5px solid #ccc;
+}
+
+.article img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/**************************
+       F O O T E R
+**************************/
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgba(204, 204, 204, 0.595);
+    font-family: MavenPro;
+}
+
+#developer{
+    color: #F77C4D;
+}
