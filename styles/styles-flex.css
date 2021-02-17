@@ -229,4 +229,37 @@ footer{
  /**************************
       T A B L E T
 **************************/
-@media screen and (min-device-width: 481px) and (max-device-width: 1024px) {}
+@media screen and (min-device-width: 481px) and (max-device-width: 900px) {
+    .container{
+        height: 20rem;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+    #logo{
+        flex-grow: 2;
+    }
+    nav{
+        padding: .5rem;
+    }
+    nav ul{
+        display: flex;
+        align-self: flex-start;
+        justify-content:space-evenly;
+        flex-grow: 5;
+    }
+    /***************+ FOLLOW FROM HERE *********************************************************
+ FOLLOW FROM  FOLLOW FROM HERE  HERE  FOLLOW FROM HERE  FOLLOW FROM HERE
+ FOLLOW FROM HERE  FOLLOW FROM HERE  FOLLOW FROM HERE  FOLLOW FROM HERE
+    ***************************+**************************************/
+    nav ul li a i{
+        margin-left: 1px;
+    }
+    .social-links{
+        flex-grow: 2;
+    }
+    .social-links ul li a i{
+        color: rgba(12, 12, 12, 0.836);
+    }
+}
