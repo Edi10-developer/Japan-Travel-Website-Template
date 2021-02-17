@@ -3,14 +3,14 @@
 # Japan Traveling Website Template
 
 A layout that have to work on both desktop and mobile and tablet.
-The technologies used are HTML and CSS.
+The technologies used are HTML and CSS Flexbox.
 
-[Live Site](https://css-layout-exercise.netlify.app/)
+[Live Site](https://japan-traveling-website-template.netlify.app/)
 
 
 ## View:
 
-![Alt text](./img/MODEL?raw=true "Layout")
+![Alt text](./img/MODEL.png?raw=true "Layout")
 
 
 
