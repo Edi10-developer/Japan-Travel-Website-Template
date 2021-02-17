@@ -220,6 +220,9 @@ footer{
     }
     .article{
         width: calc(100% - 10px);
+    }
+    .article p {
+        padding: 1rem;
     } 
 }
 
