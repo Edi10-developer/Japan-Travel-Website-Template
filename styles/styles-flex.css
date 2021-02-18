@@ -29,6 +29,9 @@ ul{
     list-style-type: none;
 }
 
+.active{
+    color: rgba(0, 0, 0, 0.956);
+}
 /**************************
        H E A D E R
 **************************/
@@ -145,12 +148,47 @@ nav ul li a:hover, nav ul li a i:hover{
 }
 
 .article-img{
-    justify-content: center;
-    height: 70%;
+    height: 65%;
+    justify-content:flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
+
 .article-img img{
+    transition: all 1000ms;
+    overflow: hidden;
     width: 100%;
     height: 100%;
+    z-index:1;
+}
+.article-img img:hover{
+    filter:grayscale();
+}
+
+.date{
+    color: white;
+    font-family: MavenPro;
+    margin-left: .2rem;
+    margin-top: -2rem;
+    font-weight: 600;
+    z-index:2;
+}
+
+.topic{
+    width: calc(100% - 3px);
+    height: 2rem;
+    color: white;
+    font-family: MavenPro;
+    font-weight: 800;
+    letter-spacing: 1px;
+    background-color: #F73F52;
+    padding-left: .2rem;
+    z-index:3;
+}
+.topic span{
+   display: block;
+   margin-top: .72rem;
 }
 
 .article p{
